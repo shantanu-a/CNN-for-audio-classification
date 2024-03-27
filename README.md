@@ -15,8 +15,7 @@ If you want to run the training scripts, then please initialize the train and te
 
 In the testing script, "TEST_DATA_DIRECTORY_ABSOLUTE_PATH" and "OUTPUT_CSV_ABSOLUTE_PATH" must be set before running the script. In case you want to use the test files or output.csv already provided, set the path of that.
 
-Audio dataset is provided, but you can use any relevant dataset. The models have been trained on this dataset which has 13 classes. If you use the same dataset, then there is no need to re-train the model as the .keras file has already been provided. Else, if you use a custom dataset then you need to make relevant changes to the models.
-
+Audio dataset is not provided, but you can use any relevant dataset. The models have been trained on a dataset which has 13 classes. Only the .keras file for mobileNet architecture is provided as the weights for ResNet are too large. Please make relevant changes to the model bases on your dataset.
 
 Ideal order of running scripts-
 1)convert_train_val_audio_to_image.py
